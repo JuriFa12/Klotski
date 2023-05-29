@@ -57,31 +57,31 @@ public class Prova extends Application
 		Button load = new Button ();
 		
 		undo.setText("Undo");
-		undo.setTranslateX(600);
+		undo.setTranslateX(450);
 		undo.setTranslateY(700);
 		
 		save.setText("Save");
 		save.setTranslateX(700);
-		save.setTranslateY(100);
+		save.setTranslateY(150);
 		
 		load.setText("Load");
 		load.setTranslateX(700);
-		load.setTranslateY(50);
+		load.setTranslateY(200);
 	
 		right.setText("Right");
-		right.setTranslateX(750);
+		right.setTranslateX(700);
 		right.setTranslateY(700);
 		
 		left.setText("Left");
-		left.setTranslateX(650);
+		left.setTranslateX(600);
 		left.setTranslateY(700);
 		
 		up.setText("Up");
-		up.setTranslateX(700);
-		up.setTranslateY(660);
+		up.setTranslateX(652);
+		up.setTranslateY(667);
 		
 		down.setText("Down");
-		down.setTranslateX(695);
+		down.setTranslateX(645);
 		down.setTranslateY(700);
 		
 		
