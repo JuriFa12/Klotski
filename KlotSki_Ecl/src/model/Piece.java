@@ -15,8 +15,8 @@ public class Piece
     {
         this.coordinate_x = x;
         this.coordinate_y = y;
-        this.height = a;
-        this.width = l;
+        this.height = a;//altezza
+        this.width = l;//lunghezza
     }
     
     //Costruttore che riceve un altro elemento delle stessa classe

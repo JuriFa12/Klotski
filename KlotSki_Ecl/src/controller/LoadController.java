@@ -9,26 +9,33 @@ import javafx.scene.text.Text;
 import java.util.Scanner;
 import model.*;
 
-
+//Classe utilizzata per modificare la configurazione presentata a schermata
 public class LoadController
 {
+	//Funzione che riceve come input la tavola di gioco e il File dove è stata salvato il gioco e lo carica nella finestra corrente
 	public void load (Board game, Text moves, Group root, Rectangle[] pieces,File save)
 	{
 		try 
 		{
+			//Scanner per leggere i contenuti del file
 			Scanner reader = new Scanner(save);
-			int config = reader.nextInt();
+			//Il primo dato contenuto nel file è il tipo di configurazione
+			int config = reader.nextInt(); 
 			
+			//Controlla che la configurazione messa nel file sia uguale a quella selezionata
 			if (game.getConfiguration() == config)
 			{
-				if(config==3&&game.getConfiguration()!=3) 
+				if(config==3&&game.getConfiguration()!=3) //Problema, la configurazione del file non è compatibile con quella selezionata
 				{
 					reader.close();
 					return;
 				}
-				int move = reader.nextInt();
+				//Il secondo dato contenuto del file è il numero di mosse effettuate
+				int move = reader.nextInt(); 
+				
 				Piece[] values = new Piece[10];
 			
+				//Ciclo che inserisce i dati dei pezzi in un array
 				int s=0;
 				while(reader.hasNextInt())
 				{
@@ -40,15 +47,19 @@ public class LoadController
 					s++;
 				}
 				
-				game.load(move, values);
-			
-				reader.close();
+				//Richiama il load di Board
+				game.load(move, values); 
+				
+				//Richiama il load di Board e prende i nuovi pezzi
+				reader.close(); 
 				Piece [] blocks = game.getPieces();
-			
+				
+				 //Aggiona a schermo il nuovo numero di mosse
 				root.getChildren().remove(moves);
 				moves.setText("Moves: " + game.getMoves());
-
-				for (int i = 0; i < 10; i++)
+				
+				//Ciclo usato per riposizionare i nuovi rettangoli a schermo
+				for (int i = 0; i < 10; i++) 
 				{
 					int [] dimensions2 = blocks[i].getDimensions();
 					pieces[i].setX(dimensions2[1]*100);
@@ -56,10 +67,11 @@ public class LoadController
 					pieces[i].setFill(Color.WHITE);
 				}
 			
+				 //Il blocco 2x2 ha un colore diverso, per questo viene aggiornato a parte
 				pieces[1].setFill(Color.FIREBRICK);
 				root.getChildren().add(moves);
 				}
-				else
+				else //Caso dove il tipo di configurazione salvata nel file non sia uguale a quella attuale
 				{
 					reader.close();
 					return;

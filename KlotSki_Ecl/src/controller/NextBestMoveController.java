@@ -9,16 +9,24 @@ import model.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.util.Duration;
-
+//Classe che rappresenta un controllore per la sequenza di risoluzione del gioco
 public class NextBestMoveController
 {
 	public void resolve (Board game, Group root, Text moves, Rectangle [] a,Text win,int index)
 	{
+	//Opzione di risoluzione per la configurazione 1
 	if( game.getConfiguration() == 1)
 	{
-		SelectPieceController b = new SelectPieceController();
+		if(game.getMoves()!= 0) {
+			return;
+		}
+		//Nuovo controllore per selezionare un particolare pezzo
+		SelectPieceController b = new SelectPieceController(); 
+		//Nuovo controllore per muovere il pezzo selezionato
 		MovePieceController c = new MovePieceController();
 		
+		
+		//Sequenza di mosse per completare il gioco
 		Timeline resolve = new Timeline(
 			    new KeyFrame(Duration.millis(000), event -> 
 			    {
@@ -312,7 +320,7 @@ public class NextBestMoveController
 					c.move(a,game,root,1,moves,win);
 			    })			    
 			);		
-		resolve.play();
+		resolve.play(); //Esegue le mosse
 	}
 	else return;		
 	}
