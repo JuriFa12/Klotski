@@ -1,24 +1,25 @@
 package controller;
 
-
-import static org.junit.jupiter.api.Assertions.*;
-import model.*;
-
-import javafx.scene.Group;
-import javafx.scene.paint.*;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Text;
-
 import org.junit.jupiter.api.Test;
 
-class ResetControllerTest {
+import javafx.scene.Group;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
+import model.Board;
+import model.Piece;
+import static org.junit.Assert.assertTrue;
 
+public class NextBestMoveControllerTest {
+	
 	@Test
 	void test() 
 	{
 		Rectangle [] testRectangle = new Rectangle [10];
 		Group testRoot = new Group();
 		Board testBoard = new Board();
+		Text testWin = new Text();
+		Text testMoves = new Text();
 		Piece [] testPieces = new  Piece [10];
         testPieces[0] = new Piece(1,1,2,1);
         testPieces[1] = new Piece(1,2,2,2);
@@ -40,13 +41,11 @@ class ResetControllerTest {
 			testRectangle[i].setStroke(Color.BLACK);
 			testRoot.getChildren().add(testRectangle[i]);
 		}
-		Text testWin = new Text();
-		Text testMoves = new Text();
-		ResetController testReset = new ResetController();
-		testReset.reset(testRectangle, testBoard, testRoot, testMoves, testWin);
+		NextBestMoveController controller = new NextBestMoveController();
+		controller.resolve(testBoard, testRoot, testMoves, testRectangle, testWin);
 		
-		assertEquals(0,testBoard.getMoves());
-		assertArrayEquals(testBoard.getPieces(),testPieces);
+		assertTrue(testBoard.checkWin());
+		
 	}
 
 }

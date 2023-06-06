@@ -1,18 +1,18 @@
 package controller;
 
-
-import static org.junit.jupiter.api.Assertions.*;
-import model.*;
-
-import javafx.scene.Group;
-import javafx.scene.paint.*;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Text;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-class ResetControllerTest {
+import javafx.scene.Group;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
+import model.Board;
+import model.Piece;
 
+public class UndoControllerTest {
 	@Test
 	void test() 
 	{
@@ -42,11 +42,14 @@ class ResetControllerTest {
 		}
 		Text testWin = new Text();
 		Text testMoves = new Text();
-		ResetController testReset = new ResetController();
-		testReset.reset(testRectangle, testBoard, testRoot, testMoves, testWin);
+		UndoController testUndo = new UndoController();
+		testUndo.undo(testRectangle, testBoard, testRoot, testMoves, testWin);
 		
 		assertEquals(0,testBoard.getMoves());
 		assertArrayEquals(testBoard.getPieces(),testPieces);
+		
+		
 	}
+
 
 }
