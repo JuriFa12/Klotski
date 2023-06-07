@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Air-di-Juri.wind3.hub" name="controller.LoadControllerTest" skipped="0" tests="1" time="0.4" timestamp="2023-06-07T10:11:45">
+  <properties>
+    <property name="ant.library.dir" value="/Users/jurifarruku/.p2/pool/plugins/org.apache.ant_1.10.12.v20211102-1452/lib" />
+    <property name="java.specification.version" value="17" />
+    <property name="ant.project.name" value="KlotSki_Ecl" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.class.path" value="/Users/jurifarruku/eclipse-workspace/KlotSki_Ecl/bin:/Users/jurifarruku/.p2/pool/plugins/junit-jupiter-api_5.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-jupiter-engine_5.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-jupiter-migrationsupport_5.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-jupiter-params_5.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-platform-commons_1.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-platform-engine_1.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-platform-launcher_1.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-platform-runner_1.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-platform-suite-api_1.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-platform-suite-engine_1.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-platform-suite-commons_1.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/junit-vintage-engine_5.9.2.jar:/Users/jurifarruku/.p2/pool/plugins/org.opentest4j_1.2.0.jar:/Users/jurifarruku/.p2/pool/plugins/org.apiguardian.api_1.1.2.jar:/Users/jurifarruku/.p2/pool/plugins/org.junit_4.13.2.v20211018-1956.jar:/Users/jurifarruku/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar:/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx-swt.jar:/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.base.jar:/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.fxml.jar:/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.graphics.jar:/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.media.jar:/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.swing.jar:/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.web.jar:/Users/jurifarruku/.p2/pool/plugins/org.apache.ant_1.10.12.v20211102-1452/lib/ant-launcher.jar:/Users/jurifarruku/.p2/pool/plugins/org.apache.ant_1.10.12.v20211102-1452/lib/ant.jar:/Users/jurifarruku/.p2/pool/plugins/org.apache.ant_1.10.12.v20211102-1452/lib/ant-junit.jar:/Users/jurifarruku/.p2/pool/plugins/org.apache.ant_1.10.12.v20211102-1452/lib/ant-junit4.jar" />
+    <property name="env.HOME" value="/Users/jurifarruku" />
+    <property name="source" value="17" />
+    <property name="env.COMMAND_MODE" value="unix2003" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="java.vm.specification.version" value="17" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="IT" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib" />
+    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_24438" value="1" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner controller.LoadControllerTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/jurifarruku/eclipse-workspace/KlotSki_Ecl/junit/TEST-controller.LoadControllerTest.xml crashfile=/Users/jurifarruku/eclipse-workspace/KlotSki_Ecl/junitvmwatcher17445938863032485105.properties propsfile=/Users/jurifarruku/eclipse-workspace/KlotSki_Ecl/junit16922600965982848500.properties" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="jdk.debug" value="release" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="/Users/jurifarruku" />
+    <property name="user.language" value="it" />
+    <property name="eclipse.pdebuild.templates" value="/Users/jurifarruku/Desktop/Eclipse.app/Contents/Eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.11.400.v20220923-1253/templates" />
+    <property name="env.JAVA_MAIN_CLASS_24438" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="jdk.module.path" value="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib" />
+    <property name="java.version.date" value="2021-09-14" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home" />
+    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_23109" value="1" />
+    <property name="basedir" value="/Users/jurifarruku/eclipse-workspace/KlotSki_Ecl" />
+    <property name="file.separator" value="/" />
+    <property name="eclipse.pdebuild.home" value="/Users/jurifarruku/Desktop/Eclipse.app/Contents/Eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.11.400.v20220923-1253/." />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="ant.java.version" value="17" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env.APP_ICON_23109" value="../Resources/Eclipse.icns" />
+    <property name="ant.file.KlotSki_Ecl" value="/Users/jurifarruku/eclipse-workspace/KlotSki_Ecl/build.xml" />
+    <property name="env.ANT_HOME" value="/Users/jurifarruku/.p2/pool/plugins/org.apache.ant_1.10.12.v20211102-1452" />
+    <property name="env.XPC_SERVICE_NAME" value="application.epp.package.java.19162587.19162639" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.runtime.version" value="17+35-LTS-2724" />
+    <property name="java.security.manager" value="allow" />
+    <property name="user.name" value="jurifarruku" />
+    <property name="ant.file" value="/Users/jurifarruku/eclipse-workspace/KlotSki_Ecl/build.xml" />
+    <property name="env.PATH" value="/usr/bin:/bin:/usr/sbin:/sbin" />
+    <property name="path.separator" value=":" />
+    <property name="os.version" value="13.3.1" />
+    <property name="env.LOGNAME" value="jurifarruku" />
+    <property name="env.XPC_FLAGS" value="0x0" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x4" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.__CFBundleIdentifier" value="epp.package.java" />
+    <property name="ant.project.invoked-targets" value="init-eclipse-compiler,build-eclipse-compiler,build,build-project,build-subprojects,TestPiece,TestBoard,TestSelectPieceController,ResetControllerTest,SaveControllerTest,SetConfigurationControllerTest,UndoControllerTest,MovePieceControllerTest,LoadControllerTest,junitreport" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="ECLIPSE_HOME" value="../../Desktop/Eclipse.app/Contents/Eclipse/" />
+    <property name="env.SHELL" value="/bin/zsh" />
+    <property name="ant.core.lib" value="/Users/jurifarruku/.p2/pool/plugins/org.apache.ant_1.10.12.v20211102-1452/lib/ant.jar" />
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+    <property name="java.io.tmpdir" value="/var/folders/37/h48zzhzd505707zm4825bt7r0000gn/T/" />
+    <property name="ant.file.type.KlotSki_Ecl" value="file" />
+    <property name="java.version" value="17" />
+    <property name="user.dir" value="/Users/jurifarruku/eclipse-workspace/KlotSki_Ecl" />
+    <property name="os.arch" value="x86_64" />
+    <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.3xvSwbsr6h/Listeners" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.home" value="/Users/jurifarruku/.p2/pool/plugins/org.apache.ant_1.10.12.v20211102-1452" />
+    <property name="target" value="17" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="native.encoding" value="UTF-8" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+    <property name="java.library.path" value="/Users/jurifarruku/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="eclipse.pdebuild.scripts" value="/Users/jurifarruku/Desktop/Eclipse.app/Contents/Eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.11.400.v20220923-1253/scripts" />
+    <property name="env.TMPDIR" value="/var/folders/37/h48zzhzd505707zm4825bt7r0000gn/T/" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.vm.version" value="17+35-LTS-2724" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="env.USER" value="jurifarruku" />
+    <property name="java.class.version" value="61.0" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter" />
+    <property name="ant.project.default-target" value="build" />
+  </properties>
+  <testcase classname="controller.LoadControllerTest" name="testLoad" time="0.294" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

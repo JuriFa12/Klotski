@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="KlotSki_Ecl">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../Desktop/Eclipse.app/Contents/Eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="17"/>
+    <property name="source" value="17"/>
+    <path id="JUnit 5.libraryclasspath">
+        <pathelement location="../../.p2/pool/plugins/junit-jupiter-api_5.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-jupiter-engine_5.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-jupiter-migrationsupport_5.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-jupiter-params_5.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-platform-commons_1.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-platform-engine_1.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-platform-launcher_1.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-platform-runner_1.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-platform-suite-api_1.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-platform-suite-engine_1.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-platform-suite-commons_1.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/junit-vintage-engine_5.9.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.opentest4j_1.2.0.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.apiguardian.api_1.1.2.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.junit_4.13.2.v20211018-1956.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+     </path>
+        <path id="JavaFX.libraryclasspath">
+        <pathelement location="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx-swt.jar"/>
+        <pathelement location="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.base.jar"/>
+        <pathelement location="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.control.jar"/>
+        <pathelement location="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.fxml.jar"/>
+        <pathelement location="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.graphics.jar"/>
+        <pathelement location="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.media.jar"/>
+        <pathelement location="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.swing.jar"/>
+        <pathelement location="/Users/jurifarruku/Downloads/javafx-sdk-17.0.7/lib/javafx.web.jar"/>	
+    </path>
+    <path id="KlotSki_Ecl.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.MainTest.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.TestSelectPieceController.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    	<path refid="JavaFX.libraryclasspath"/>
+    </path>
+    <path id="run.TestPiece.classpath">
+        <pathelement location="src"/>
+        <pathelement location="test"/>
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.LoadControllerTest.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+      	<path refid="JavaFX.libraryclasspath"/>
+    </path>
+    <path id="run.TestBoard.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.Main_Finale.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.TestPiece (1).classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.ResetControllerTest.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+      	<path refid="JavaFX.libraryclasspath"/>
+    </path>
+    <path id="run.prova.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.a.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.Main (2).classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.TestPiece.testPiece2.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.prova (1).classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.App.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.TestPiece.testMove.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.MovePieceControllerTest.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+      	<path refid="JavaFX.libraryclasspath"/>
+    </path>
+    <path id="run.UndoControllerTest.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+      	<path refid="JavaFX.libraryclasspath"/>
+    </path>
+    <path id="run.SetConfigurationControllerTest.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+      	<path refid="JavaFX.libraryclasspath"/>
+    </path>
+    <path id="run.SaveControllerTest.classpath">
+        <path refid="KlotSki_Ecl.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+      	<path refid="JavaFX.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.xtend"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="test">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.xtend"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="test"/>
+            <classpath refid="KlotSki_Ecl.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="MainTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="view.MainTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.MainTest.classpath"/>
+        </junit>
+    </target>
+    <target name="TestSelectPieceController">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="controller.TestSelectPieceController" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.TestSelectPieceController.classpath"/>
+        </junit>
+    </target>
+    <target name="TestPiece">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="model.TestPiece" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.TestPiece.classpath"/>
+        </junit>
+    </target>
+    <target name="LoadControllerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="controller.LoadControllerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.LoadControllerTest.classpath"/>
+        </junit>
+    </target>
+    <target name="TestBoard">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="model.TestBoard" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.TestBoard.classpath"/>
+        </junit>
+    </target>
+    <target name="Main_Finale">
+        <java classname="Main_Finale" failonerror="true" fork="yes">
+            <classpath refid="run.Main_Finale.classpath"/>
+        </java>
+    </target>
+    <target name="TestPiece (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="model.TestPiece" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.TestPiece (1).classpath"/>
+        </junit>
+    </target>
+    <target name="ResetControllerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="controller.ResetControllerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.ResetControllerTest.classpath"/>
+        </junit>
+    </target>
+    <target name="prova">
+        <java classname="view.Prova" failonerror="true" fork="yes">
+            <classpath refid="run.prova.classpath"/>
+        </java>
+    </target>
+    <target name="a">
+        <java classname="view.a" failonerror="true" fork="yes">
+            <classpath refid="run.a.classpath"/>
+        </java>
+    </target>
+    <target name="Main (2)">
+        <java classname="view.Main" failonerror="true" fork="yes">
+            <classpath refid="run.Main (2).classpath"/>
+        </java>
+    </target>
+    <target name="TestPiece.testPiece2">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="model.TestPiece" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.TestPiece.testPiece2.classpath"/>
+        </junit>
+    </target>
+    <target name="prova (1)">
+        <java classname="model.prova" failonerror="true" fork="yes">
+            <classpath refid="run.prova (1).classpath"/>
+        </java>
+    </target>
+    <target name="App">
+        <java classname="view.App" failonerror="true" fork="yes">
+            <classpath refid="run.App.classpath"/>
+        </java>
+    </target>
+    <target name="TestPiece.testMove">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="model.TestPiece" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.TestPiece.testMove.classpath"/>
+        </junit>
+    </target>
+    <target name="MovePieceControllerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="controller.MovePieceControllerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.MovePieceControllerTest.classpath"/>
+        </junit>
+    </target>
+    <target name="UndoControllerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="controller.UndoControllerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.UndoControllerTest.classpath"/>
+        </junit>
+    </target>
+    <target name="SetConfigurationControllerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="controller.SetConfigurationControllerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SetConfigurationControllerTest.classpath"/>
+        </junit>
+    </target>
+    <target name="SaveControllerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="controller.SaveControllerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SaveControllerTest.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
