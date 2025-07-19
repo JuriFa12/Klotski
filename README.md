@@ -1,1 +1,1 @@
-Version of the famous Klotski game, developed for the bachelor course of Software Engineering.
+Version of the famous Klotski game, developed using Java and JavaFX
